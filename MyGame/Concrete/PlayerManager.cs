@@ -20,7 +20,7 @@
 
         public void Save(Player player)
         {
-            var _isRealPeplayerCheckService.CheckIfRealPerson(player);
+            var _isRealPeplayerCheckService = _playerCheckService.CheckIfRealPerson(player);
             Console.WriteLine("saved to db : " + player.FullName);
         }
 
